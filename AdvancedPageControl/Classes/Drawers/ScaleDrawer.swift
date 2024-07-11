@@ -15,6 +15,10 @@ public class ScaleDrawer: AdvancedPageControlDrawerParentWithIndicator, Advanced
         drawIndicators(rect)
     }
 
+    public func setScaleFactor(to value: CGFloat) {
+        scaleFactor = value
+    }
+
     func drawIndicators(_ rect: CGRect) {
         for i in 0 ..< numberOfPages {
             let topTranslate = scaleFactor
